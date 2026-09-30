@@ -1,4 +1,11 @@
-# VideoGame Pose - Combate Multi-Jugador por Vision Artificial
+### 🎮 1. Modo 1v1 Local (Misma Pantalla / 1 Sola Cámara)
+¡Juega cara a cara con tu amigo en la misma computadora!
+* **Doble clic en `INICIAR_1V1_LOCAL.bat`**.
+* La cámara web detecta automáticamente a los 2 jugadores (P1 a la izquierda, P2 a la derecha).
+* O jueguen en el mismo teclado con el simulador 1v1.
+* Consulta todos los detalles en [GUIA_1V1_LOCAL.md](GUIA_1V1_LOCAL.md).
+
+\n# VideoGame Pose - Combate Multi-Jugador por Vision Artificial
 
 Videojuego de combate en tiempo real donde los jugadores controlan a sus avatares realizando posturas corporales frente a la camara web o simulador de teclado bajo el estandar oficial Google Cloud OKF v0.2.
 

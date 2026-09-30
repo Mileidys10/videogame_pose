@@ -267,18 +267,30 @@ def main() -> int:
                         elif event.key == pygame.K_p:
                             raw_backend.set_player_pose(target_p, "TAUNT_CROSS")
 
-                        # En modo local 2 jugadores, los numeros 8, 9, 0, -, = controlan P2
+                        # En modo local 2 jugadores, mapeo completo para P2 (Teclado estandar y Teclado numerico)
                         if args.mode == "local" and args.players >= 2:
-                            if event.key == pygame.K_8:
+                            if event.key in (pygame.K_8, getattr(pygame, "K_KP1", -1)):
                                 raw_backend.set_player_pose(2, "KAMEHAMEHA")
-                            elif event.key == pygame.K_9:
+                            elif event.key in (pygame.K_9, getattr(pygame, "K_KP2", -1)):
                                 raw_backend.set_player_pose(2, "SHIELD")
-                            elif event.key == pygame.K_0:
+                            elif event.key in (pygame.K_0, getattr(pygame, "K_KP3", -1)):
                                 raw_backend.set_player_pose(2, "CHARGE_KI")
-                            elif event.key == pygame.K_MINUS:
+                            elif event.key in (pygame.K_MINUS, getattr(pygame, "K_KP4", -1)):
                                 raw_backend.set_player_pose(2, "IDLE")
-                            elif event.key == pygame.K_EQUALS:
+                            elif event.key in (pygame.K_EQUALS, getattr(pygame, "K_KP5", -1)):
                                 raw_backend.set_player_pose(2, "PUNCH")
+                            elif event.key in (pygame.K_LEFTBRACKET, getattr(pygame, "K_KP6", -1)):
+                                raw_backend.set_player_pose(2, "UPPERCUT")
+                            elif event.key in (pygame.K_RIGHTBRACKET, getattr(pygame, "K_KP7", -1)):
+                                raw_backend.set_player_pose(2, "SIXTY_SEVEN")
+                            elif event.key in (pygame.K_j, getattr(pygame, "K_KP8", -1)):
+                                raw_backend.set_player_pose(2, "HADOKEN")
+                            elif event.key in (pygame.K_k, getattr(pygame, "K_KP9", -1)):
+                                raw_backend.set_player_pose(2, "SPIRIT_BOMB")
+                            elif event.key in (pygame.K_l, getattr(pygame, "K_KP0", -1)):
+                                raw_backend.set_player_pose(2, "DODGE_ROLL")
+                            elif event.key in (pygame.K_SEMICOLON, getattr(pygame, "K_KP_PERIOD", -1)):
+                                raw_backend.set_player_pose(2, "TAUNT_CROSS")
 
             # 2. Captura de Fotograma Local
             frame: Optional[np.ndarray] = None
