@@ -1,3 +1,19 @@
+
+## 🐳 Despliegue con Docker (Sin Instalar Dependencias)
+
+Puedes compilar y ejecutar el servidor de juego o el entorno de pruebas de visión artificial directamente en un contenedor **Docker** sin necesidad de instalar OpenCV, MediaPipe ni paquetes de C++:
+
+```bash
+# 1. Iniciar el Servidor de Combate LAN (Puerto UDP 9999)
+docker compose up --build -d
+
+# 2. Ver logs en tiempo real del servidor
+docker compose logs -f server
+
+# 3. Ejecutar una partida de simulación autónoma (IA vs IA / Mock)
+docker compose run --rm ai-match
+```
+
 ### 🎮 1. Modo 1v1 Local (Misma Pantalla / 1 Sola Cámara)
 ¡Juega cara a cara con tu amigo en la misma computadora!
 * **Doble clic en `INICIAR_1V1_LOCAL.bat`**.

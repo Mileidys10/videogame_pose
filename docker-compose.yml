@@ -1,0 +1,26 @@
+# ==============================================================================
+# docker-compose.yml — VideoGame Pose Combat
+# Ejecución en un solo comando: docker compose up --build
+# ==============================================================================
+
+services:
+  # Servidor de combate multijugador LAN sin pantalla
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: videogame-pose-server
+    ports:
+      - "9999:9999/udp"
+    command: ["python", "main.py", "--mode", "host", "--port", "9999", "--backend", "mock", "--headless"]
+    restart: unless-stopped
+
+  # Modo simulación autónoma (1P vs IA)
+  ai-match:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: videogame-pose-ai
+    command: ["python", "main.py", "--mode", "single", "--difficulty", "hard", "--backend", "mock", "--headless"]
+    profiles:
+      - simulation
