@@ -1,5 +1,5 @@
 # Manual Oficial de Movimientos y Poses Biomecanicas
-## VideoGame Pose Combat (Gobernanza Google Cloud OKF v0.2)
+## VideoGame Pose Combat (Guía Técnica y Biomecánica)
 
 Bienvenido al manual oficial de combate de **VideoGame Pose Combat**. Este documento describe con precision milimetrica como ejecutar cada postura corporal frente a la camara web, que efecto mecanico produce en el motor del juego y que ventajas tacticas ofrece en el combate.
 
@@ -281,4 +281,4 @@ Para garantizar una deteccion del 100% por los modelos de vision (YOLOv8-Pose o 
 * **'ESC' o 'Q'**: Cierra y sale limpiamente del juego liberando camara y sockets.
 
 ---
-*Documento mantenido bajo el estandar Google Cloud OKF v0.2 de la Fabrica de Software Agil.*
+*Desarrollado con arquitectura de software limpia y visión artificial en tiempo real.*

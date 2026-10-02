@@ -1,5 +1,5 @@
 # Guia Oficial Multijugador LAN y Remoto (2 PCs)
-## VideoGame Pose Combat (Gobernanza Google Cloud OKF v0.2)
+## VideoGame Pose Combat (Guía Técnica y Biomecánica)
 
 Esta guia explica paso a paso y de forma infalible como jugar **VideoGame Pose Combat** entre dos computadoras separadas, donde una persona actua como **HOST (Servidor / Jugador 1)** y la otra como **CLIENTE (Jugador 2)**, ya sea en la misma red Wi-Fi o a traves de Internet.
 
@@ -112,4 +112,4 @@ python main.py --mode client --host 192.168.1.14 --port 9999 --backend mock
   - El Host puede presionar la tecla **'R'** en cualquier momento para reiniciar el combate y restaurar la vida de ambos.
 
 ---
-*Manual oficial de red de la Fabrica de Software Google Cloud OKF v0.2.*
+*Arquitectura de red LAN para combate multijugador en tiempo real.*

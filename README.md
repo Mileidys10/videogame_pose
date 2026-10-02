@@ -121,4 +121,4 @@ python -m unittest discover -s tests -v
 * **'ESC' o 'Q'**: Salir del juego limpiamente.
 
 ---
-*Gobernado bajo el estandar Google Cloud OKF v0.2 de la Fabrica de Software.*
+*Desarrollado por Mileidys Agamez Ospino • Visión Artificial, Pygame-CE y Arquitectura Limpia.*

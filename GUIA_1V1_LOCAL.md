@@ -2,7 +2,7 @@
 
 > **Modalidad**: 2 Jugadores en la misma computadora y en la misma pantalla.
 > **Dispositivo**: 1 sola cámara web (o el mismo teclado en modo simulador).
-> **Gobernanza**: Estándar Google Cloud OKF v0.2.
+> **Arquitectura**: Visión Artificial en Tiempo Real & Edge Computing.
 
 ---
 

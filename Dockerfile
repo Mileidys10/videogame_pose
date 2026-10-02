@@ -1,6 +1,6 @@
 # ==============================================================================
 # Dockerfile — VideoGame Pose Combat (MediaPipe + YOLOv8 + Pygame-CE)
-# Gobernado por el Estándar Google Cloud OKF v0.2
+# VideoGame Pose Combat - Docker Containerization
 # ==============================================================================
 
 FROM python:3.11-slim

@@ -432,7 +432,7 @@ graph LR
 
 ---
 
-*Generado bajo estándar Google Cloud OKF v0.2 | Rol: SoftwareFactoryArchitect + AIIntegrationSpecialist*
+*Documentación de Arquitectura de Software y Visión Artificial*
 *Sincronizado con Wiki Obsidian — `sincronizar_wiki_obsidian()` ejecutado ✅*
 
 ---
